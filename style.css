@@ -1,0 +1,181 @@
+.form{
+    background-color: rgb(224, 228, 228);
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    left: 22%;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+}
+.input{
+    width: 85%;
+    height: 50px;
+    border-radius: 10px;
+    border: none; 
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.input:focus{
+    border: 0 none #fff;
+    overflow: hidden;
+    outline: none;
+}
+.add{
+    width: 11%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(240, 169, 169);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 2px 2px white,-2px -2px white;
+}
+.add:active{
+    transform: translate(2px,2px);
+}
+.tasks{
+    width: 50%;
+    padding: 20px;
+    background-color: rgb(224, 228, 228);
+    position: relative;
+    left: 22%;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.tasks .task{
+    background-color: white;
+    width: 97%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks .task:not(:last-child){
+    margin-bottom: 15px;
+}
+.tasks .task:hover{
+    background-color: #f7f7f7;
+}
+.tasks .task.done{
+    opacity: 0.5;
+    color: rgb(240, 169, 169);
+}
+.tasks .task span{
+    background-color: rgb(240, 169, 169);
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px rgb(224, 228, 228),-2px -2px rgb(224, 228, 228);
+}
+.tasks .task span:active{
+    transform: translate(2px,2px);
+}
+
+@media (min-width:1025px)  {
+    .input{
+        width: 85%;
+    }
+    .add{
+        width: 15%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .input{
+        width: 76%;
+    }
+    .add{
+        width: 20%;
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width:481px) and (max-width:768px){
+    .input{
+        width: 67%;
+        height: 30px;
+        margin-right: 5px;
+    }
+    .add{
+        width: 30%;
+        font-size: 12px;
+        height: 32px;
+        font-weight: bold;
+    }
+    .tasks .task span{
+        font-size: 12px;
+        cursor: pointer;
+        height: 15px;
+    }
+    .tasks .task{
+        width: 97%;
+        height: 30px;
+        padding: 8px;
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width:300px) and (max-width:480px){
+    .input{
+        width: 76%;
+        height: 30px;
+        margin-right: 5px;
+    }
+    .add{
+        width: 30%;
+        font-size: 12px;
+        padding-left: 2px;
+        padding-right: 2px;
+        height: 32px;
+        font-weight: bold;
+    }
+    .tasks .task span{
+        font-size: 12px;
+        cursor: pointer;
+        height: 15px;
+    }
+    .tasks .task{
+        width: 97%;
+        height: 30px;
+        padding: 8px;
+        font-size: 20px;
+    }
+    .form{
+        width: 70%;
+        position: relative;
+        left: 10%;
+    }
+    .tasks{
+        width: 70%;
+        position: relative;
+        left: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
